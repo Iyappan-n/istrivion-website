@@ -1,69 +1,80 @@
-import Image from "next/image";
+import Link from "next/link";
+import HeroEcosystem from "./hero-ecosystem";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="min-h-screen overflow-x-clip bg-transparent text-[#73777D]">
+      <section
+        id="home"
+        className="relative mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-24 max-[639px]:min-h-0 max-[639px]:flex-col max-[639px]:items-stretch max-[639px]:px-5 max-[639px]:py-14 lg:px-10"
+      >
+        <div className="relative z-10 w-full max-w-4xl">
+          <div className="hero-stagger hero-stagger-1 mb-8 flex items-center gap-1 sm:gap-3">
+            <span
+              aria-hidden="true"
+              className="h-px w-5 shrink-0 bg-[#D71920] sm:w-10"
+            />
+            <p className="text-xs font-bold tracking-[0.3em] text-[#D71920] max-[639px]:tracking-[0.16em]">
+              INNOVATION • SMART • TECHNOLOGY
+            </p>
+            <span
+              aria-hidden="true"
+              className="h-px w-5 shrink-0 bg-[#D71920] sm:w-10"
+            />
+          </div>
+
+          <h1 className="text-[clamp(2.5rem,11vw,3rem)] font-black leading-[1.08] tracking-tight sm:text-6xl lg:text-8xl">
+            <span className="hero-stagger hero-stagger-2 inline-block">
+              Build Digital
+            </span>
+            <br />
+            <span className="hero-stagger hero-stagger-3 inline-block">
+              Experiences.
+            </span>
+            <br />
+            <span className="hero-stagger hero-stagger-4 inline-block text-[#D71920]">
+              Create Possibilities.
+            </span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+
+          <p className="hero-stagger hero-stagger-5 mt-8 max-w-2xl text-base leading-8 text-[#666] sm:text-lg">
+            We turn ideas into meaningful digital experiences through
+            technology, creativity and thoughtful design.
+          </p>
+
+          <div className="hero-stagger hero-stagger-6 mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/services"
+              className="group inline-flex min-h-11 items-center rounded-full bg-[#D71920] px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-1 hover:bg-[#AC1018] sm:px-8 sm:py-4"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Explore Our Services{" "}
+              <span
+                aria-hidden="true"
+                className="text-white transition-colors group-hover:text-white"
+              >
+                ↗
+              </span>
+            </Link>
+            <Link
+              href="/about"
+              className="group inline-flex min-h-11 items-center rounded-full border border-[#24272B]/20 px-6 py-3 text-sm font-bold transition hover:border-[#D71920] hover:text-[#D71920] sm:px-8 sm:py-4"
             >
-              Learning
-            </a>{" "}
-            center.
+              Discover ISTRIVION{" "}
+              <span
+                aria-hidden="true"
+                className="text-[#73777D] transition-colors group-hover:text-[#D71920]"
+              >
+                ↗
+              </span>
+            </Link>
+          </div>
+
+          <p className="hero-stagger hero-stagger-7 mt-16 text-sm font-medium italic tracking-wide text-[#888]">
+            Build Digital Experiences. Creating Possibilities.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        <HeroEcosystem />
+      </section>
+    </main>
   );
 }
