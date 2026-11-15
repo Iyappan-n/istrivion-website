@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "ISTRIVION Technologies",
   description:
     "Digital experiences, websites and applications crafted by ISTRIVION Technologies.",
+  icons: {
+    icon: "/istrivion-ist-mark.png",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
