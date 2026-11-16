@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { createPageMetadata } from "@/lib/seo-metadata";
 import { services } from "../../services-data";
 
 type ServiceDetailProps = {
@@ -8,6 +10,29 @@ type ServiceDetailProps = {
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: ServiceDetailProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((item) => item.slug === slug);
+
+  if (!service) {
+    return {
+      title: "Service Not Found",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  return createPageMetadata(
+    service.title,
+    service.description,
+    `/services/${service.slug}`,
+  );
 }
 
 export default async function ServiceDetailPage({

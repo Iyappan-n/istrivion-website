@@ -1,4 +1,11 @@
 import ContactForm from "./contact-form";
+import { createPageMetadata } from "@/lib/seo-metadata";
+
+export const metadata = createPageMetadata(
+  "Contact",
+  "Tell ISTRIVION Technologies about your project or idea and explore a suitable digital solution with our team.",
+  "/contact",
+);
 
 type ContactPageProps = {
   searchParams: Promise<{ service?: string; subject?: string }>;

@@ -1,5 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo-metadata";
 import HeroEcosystem from "./hero-ecosystem";
+
+export const metadata: Metadata = {
+  ...createPageMetadata(
+    "Digital Experiences & Technology Solutions",
+    "Discover ISTRIVION Technologies and our digital experiences, websites and applications created through technology and thoughtful design.",
+    "/",
+  ),
+  title: {
+    absolute: "Digital Experiences & Technology Solutions | ISTRIVION Technologies",
+  },
+};
 
 export default function Home() {
   return (

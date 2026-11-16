@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { createPageMetadata } from "@/lib/seo-metadata";
+
+export const metadata = createPageMetadata(
+  "Our Work",
+  "Discover the ISTRIVION approach to understanding ideas, creating digital solutions and transforming them into purposeful experiences.",
+  "/work",
+);
 
 const approach = [
   [
