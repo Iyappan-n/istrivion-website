@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
   description:
     "ISTRIVION Technologies creates digital experiences, websites and applications through technology, creativity and thoughtful design.",
+  verification: {
+    google: "X2KUWYdSWN0xBhjZx0tTXi-C4HJZEtyPuQWp5xelkmU",
+  },
   icons: {
     icon: "/istrivion-ist-mark.png",
   },
