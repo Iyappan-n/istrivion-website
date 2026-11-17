@@ -3,6 +3,7 @@
 import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import BrandMarquee from "./brand-marquee";
+import GoogleAnalytics from "./google-analytics";
 import PageTransitions from "./page-transitions";
 import SiteBackground from "./site-background";
 import SiteFooter from "./site-footer";
@@ -17,6 +18,7 @@ export default function SiteShell({ children }: { children: ReactNode }) {
 
   return (
     <>
+      <GoogleAnalytics />
       <SiteBackground />
       <SiteHeader />
       <BrandMarquee />
