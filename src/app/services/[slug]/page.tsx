@@ -30,7 +30,7 @@ export async function generateMetadata({
 
   return createPageMetadata(
     service.title,
-    service.description,
+    service.seoDescription,
     `/services/${service.slug}`,
   );
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "/",
   ),
   title: {
-    absolute: "Digital Experiences & Technology Solutions | ISTRIVION Technologies",
+    absolute: "Digital Solutions | ISTRIVION Technologies",
   },
 };
 

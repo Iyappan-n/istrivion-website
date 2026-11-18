@@ -3,6 +3,7 @@ type Service = {
   title: string;
   icon: string;
   description: string;
+  seoDescription: string;
   features: string[];
   keyFeatures?: string[];
   process?: string[];
@@ -15,6 +16,8 @@ export const services: Service[] = [
     icon: "web",
     description:
       "We design and develop modern, responsive websites that help businesses establish a strong online presence. From business websites to advanced web platforms, we create fast, user-friendly digital experiences that work seamlessly across devices.",
+    seoDescription:
+      "ISTRIVION Technologies builds responsive business websites and custom web applications with user-focused design, performance and SEO fundamentals.",
     features: [
       "Business and corporate websites",
       "Responsive website development",
@@ -30,6 +33,8 @@ export const services: Service[] = [
     icon: "app",
     description:
       "We build thoughtful mobile and web applications designed around real user needs and business goals. From concept to development, we focus on intuitive interfaces, reliable functionality and smooth user experiences.",
+    seoDescription:
+      "ISTRIVION app development for Android, iOS and cross-platform mobile and web apps, with intuitive interfaces and reliable features.",
     features: [
       "Android application development",
       "iOS application development",
@@ -45,6 +50,8 @@ export const services: Service[] = [
     icon: "commerce",
     description:
       "We create online shopping experiences that make it easier for businesses to showcase products, connect with customers and manage digital sales. Our solutions focus on intuitive shopping journeys, responsive design and secure integrations.",
+    seoDescription:
+      "Build an online store with ISTRIVION Technologies. E-commerce solutions include product catalogs, checkout, payment integrations and order management.",
     features: [
       "Custom online store development",
       "Product catalog and category management",
@@ -60,6 +67,8 @@ export const services: Service[] = [
     icon: "design",
     description:
       "We transform ideas into meaningful visual experiences through thoughtful UI/UX design and creative branding. We focus on usability, visual consistency and clear brand identity to help businesses connect with their audience.",
+    seoDescription:
+      "ISTRIVION Technologies designs intuitive website and app experiences, from UX research and prototypes to visual identity, logos and design systems.",
     features: [
       "User interface (UI) design",
       "User experience (UX) research and planning",
@@ -75,6 +84,8 @@ export const services: Service[] = [
     icon: "portfolio",
     description:
       "We create professional portfolio and personal websites that present your skills, achievements, work and identity with clarity. Whether you are a student, freelancer, creator or professional, we help you build a strong digital presence.",
+    seoDescription:
+      "Create a professional portfolio or personal website with ISTRIVION Technologies to showcase your skills, projects, resume and creative work.",
     features: [
       "Student and fresher portfolios",
       "Professional personal websites",
@@ -90,6 +101,8 @@ export const services: Service[] = [
     icon: "experience",
     description:
       "We create personalized digital experiences that turn unique ideas into memorable online interactions. From digital invitations to birthday surprises and special occasion websites, every experience is designed with creativity and attention to detail.",
+    seoDescription:
+      "ISTRIVION Technologies creates personalized digital experiences, including event invitations, celebration websites, interactive greetings and microsites.",
     features: [
       "Digital invitations and event websites",
       "Birthday and anniversary surprise websites",
@@ -105,6 +118,8 @@ export const services: Service[] = [
     icon: "branding",
     description:
       "We create distinctive logos and complete visual identities that help businesses establish a memorable brand presence. Our services include custom logo design, brand colour palettes, typography selection, business identity concepts, social media branding and brand guidelines.",
+    seoDescription:
+      "Build a memorable brand identity with ISTRIVION Technologies, including custom logo design, color palettes, typography and practical brand guidelines.",
     features: [
       "Custom logo design",
       "Brand colour palettes",
@@ -131,6 +146,8 @@ export const services: Service[] = [
     icon: "video",
     description:
       "We create engaging AI-powered visual content for brands, businesses and personal projects. Services include AI-generated animations, promotional videos, product showcase videos, motion graphics, creative visual storytelling and social media video content.",
+    seoDescription:
+      "Create AI-powered animations and videos with ISTRIVION Technologies, including promotional content, product showcases, motion graphics and social videos.",
     features: [
       "AI-generated animations",
       "Promotional videos",
@@ -157,6 +174,8 @@ export const services: Service[] = [
     icon: "academic",
     description:
       "We support students with academic technology projects, including mini projects, final-year project development, frontend and backend implementation, UI/UX design, AI/ML project guidance, IoT prototypes, technical documentation and project demonstrations. We clearly communicate the scope of work and provide genuine learning-oriented support.",
+    seoDescription:
+      "Get learning-oriented support for college technology projects, including web development, UI/UX, AI/ML, IoT prototypes, documentation and demos.",
     features: [
       "Mini and final-year project support",
       "Frontend and backend implementation guidance",
@@ -183,6 +202,8 @@ export const services: Service[] = [
     icon: "research",
     description:
       "We help transform innovative ideas into practical technology solutions through research, concept development, proof of concepts and prototype development. Our areas include IoT, automation, embedded systems, software solutions, hardware integration and experimental technology development.",
+    seoDescription:
+      "Turn an idea into a proof of concept with ISTRIVION Technologies through research, IoT, automation, embedded systems and prototype development.",
     features: [
       "Research and concept development",
       "Proofs of concept",
